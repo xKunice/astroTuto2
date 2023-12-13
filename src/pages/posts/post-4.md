@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: Mi cuarta entrada en el blog
 author: Andres Betancourt
 description: "Esta entrada aparecerá sola!"
