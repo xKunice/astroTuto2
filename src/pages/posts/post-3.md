@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
+layout: ../../layouts/MarkDownPostLayout.astro
 title: Mi tercera publicación en el blog
 author: Andres Betancourt
 description: "Tuve algunos problemas, pero preguntar en la comunidad me ayudó mucho."
