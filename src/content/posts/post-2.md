@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkDownPostLayout.astro
 title: Mi segunda publicación en el blog
 author: Andres Betancourt
 description: "Después de aprender un poco de Astro, ¡no podía parar!"

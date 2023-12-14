@@ -1,11 +1,19 @@
-import rss, { pagesGlobToRssItems } from '@astrojs/rss';
+import rss from '@astrojs/rss';
+import { pagesGlobToRssItems } from '@astrojs/rss';
+import { getCollection } from 'astro:content';
 
 export async function GET(context) {
+
   return rss({
-    title: 'Andres Betancourt | Blog',
-    description: 'Mi viaje de aprendizaje de Astro',
+    title: 'Aprendiz de Astro | Blog',
+    description: 'Mi viaje aprendiendo Astro',
     site: context.site,
-    items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
-    customData: `<language>es-es</language>`,
-  });
+    items: posts.map((post) => ({
+      title: post.data.title,
+      pubDate: post.data.pubDate,
+      description: post.data.description,
+      link: `/posts/${post.slug}/`,
+    })),
+    customData: `<language>en-es</language>`,
+  })
 }
